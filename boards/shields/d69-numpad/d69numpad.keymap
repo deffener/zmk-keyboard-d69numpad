@@ -10,7 +10,6 @@
             // |  NUMLOCK  |     M     |     K     |
             // |     A     |     B     |     C     |
             // |     D     |     E     |     F     |
-	    display-name = "Base";
             bindings = <
                 &to 1		&kp KP_SLASH	&kp KP_ASTERISK	&kp KP_MINUS
                 &kp KP_N7	&kp KP_N8	&kp KP_N9 
@@ -20,7 +19,6 @@
             >;
         };
 	midblock {
-	    display-name = "Middle Block";
 	    bindings = <
 		&to 0		&kp PSCRN	&kp SLCK	&kp PAUSE_BREAK
 		&kp INS		&kp HOME	&kp PG_UP
