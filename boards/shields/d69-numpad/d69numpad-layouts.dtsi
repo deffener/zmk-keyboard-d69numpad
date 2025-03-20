@@ -3,7 +3,6 @@
 / {
     d69numpad_physical_layout: d69numpad_physical_layout {
         compatible = "zmk,physical-layout";
-	complete;
 	display-name = "d69 numpad";
         transform = <&default_transform>;
         kscan = <&kscan0>;
