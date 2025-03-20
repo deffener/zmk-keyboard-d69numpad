@@ -4,7 +4,7 @@ name: d69 numpad
 type: shield
 url: https://github.com/deffener/zmk-keyboard-d69numpad/
 requires:
- - xiao
+ - seeeduino_xiao_ble
 features:
  - keys
  - studio
