@@ -2,8 +2,9 @@
 
 / {
     d69numpad_physical_layout: d69numpad_physical_layout {
-        compatible = "zmk,physical-layout-position-map";
+        compatible = "zmk,physical-layout";
 	complete;
+        transform = <&default_transform>;
         kscan = <&kscan0>;
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100    0    0       0     0     0>
@@ -25,7 +26,7 @@
             , <&key_physical_attrs 100 100  200  400       0     0     0>
             , <&key_physical_attrs 100 200  300  350       0     0     0>
             ;
-
+/*
         d69numpad_map: d69numpad {
             physical-layout = <&d69numpad_physical_layout>;
             positions
@@ -34,6 +35,7 @@
                 , < 7  8  9 10>
                 , <11 12 13   >
                 , <14 15 16 17>;
+*/
         };
     };
 };
