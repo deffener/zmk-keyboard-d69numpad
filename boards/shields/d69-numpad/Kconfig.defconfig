@@ -1,0 +1,7 @@
+if SHIELD_MY_D69NUMPAD
+
+# Name must be less than 16 characters long!
+config ZMK_KEYBOARD_NAME
+    default "d69numpad"
+
+endif

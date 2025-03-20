@@ -1,0 +1,41 @@
+#include <physical_layouts.dtsi>
+
+/ {
+    d69numpad_physical_layout: d69numpad_physical_layout {
+        compatible = "zmk,physical-layout-position-map";
+	complete;
+        display-name = "d69 numpad";
+        transform = <&default_transform>;
+        kscan = <&kscan0>;
+        keys  //                     w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs 100 100    0    0       0     0     0>
+            , <&key_physical_attrs 100 100  100    0       0     0     0>
+            , <&key_physical_attrs 100 100  200    0       0     0     0>
+            , <&key_physical_attrs 100 100  300    0       0     0     0>
+            , <&key_physical_attrs 100 100    0  100       0     0     0>
+            , <&key_physical_attrs 100 100  100  100       0     0     0>
+            , <&key_physical_attrs 100 100  200  100       0     0     0>
+            , <&key_physical_attrs 100 100    0  200       0     0     0>
+            , <&key_physical_attrs 100 100  100  200       0     0     0>
+            , <&key_physical_attrs 100 100  200  200       0     0     0>
+            , <&key_physical_attrs 100 200  300  150       0     0     0>
+            , <&key_physical_attrs 100 100    0  300       0     0     0>
+            , <&key_physical_attrs 100 100  100  300       0     0     0>
+            , <&key_physical_attrs 100 100  200  300       0     0     0>
+            , <&key_physical_attrs 100 100    0  400       0     0     0>
+            , <&key_physical_attrs 100 100  100  400       0     0     0>
+            , <&key_physical_attrs 100 100  200  400       0     0     0>
+            , <&key_physical_attrs 100 200  300  350       0     0     0>
+            ;
+
+        d69numpad_map: d69numpad {
+            physical-layout = <&d69numpad_layout>;
+            positions
+                = < 0  1  2  3>
+                , < 4  5  6   >
+                , < 7  8  9 10>
+                , <11 12 13   >
+                , <14 15 16 17>;
+        };
+    };
+};
