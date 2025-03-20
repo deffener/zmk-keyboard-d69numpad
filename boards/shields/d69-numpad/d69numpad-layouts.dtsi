@@ -29,7 +29,7 @@
             ;
 
         d69numpad_map: d69numpad {
-            physical-layout = <&d69numpad_layout>;
+            physical-layout = <&d69numpad_physical_layout>;
             positions
                 = < 0  1  2  3>
                 , < 4  5  6   >
