@@ -29,7 +29,7 @@
 		compatible = "zmk,gpio-key-wakeup-trigger";
 		trigger = <&xiao_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
 		extra-gpios = <&xiao_d 8 GPIO_ACTIVE_HIGH>;
-		wakeup-source = true;
+		wakeup-source;
 	};
 };
 
