@@ -23,22 +23,29 @@
             // |  NUMLOCK  |     M     |     K     |
             // |     A     |     B     |     C     |
             // |     D     |     E     |     F     |
-            bindings = <
-                &to 1		&kp KP_SLASH	&kp KP_ASTERISK	&kp KP_MINUS
-                &kp N7		&kp N8		&kp N9
-                &kp N4		&kp N5		&kp N6		&kp KP_PLUS
-                &kp N1		&kp N2		&kp N3
-                &kp N0		&dbl0		&kp KP_DOT	&kp KP_ENTER
-            >;
-        };
-	midblock {
-	    bindings = <
-		&to 0		&kp PSCRN	&kp SLCK	&kp PAUSE_BREAK
-		&kp INS		&kp HOME	&kp PG_UP
-		&kp DEL		&kp END		&kp PG_DN	&studio_unlock
-		&none		&kp UP		&none
-		&kp LEFT	&kp DOWN	&kp RIGHT	&none
-	    >;
+			bindings = <
+				&to 1		&kp KP_SLASH	&kp KP_ASTERISK	&kp KP_MINUS
+				&kp N7		&kp N8		&kp N9
+				&kp N4		&kp N5		&kp N6		&kp KP_PLUS
+				&kp N1		&kp N2		&kp N3
+				&kp N0		&dbl0		&kp KP_DOT	&kp KP_ENTER
+				>;
+		};
+		midblock {
+			bindings = <
+				&to 0		&kp PSCRN	&kp SLCK	&kp PAUSE_BREAK
+				&kp INS		&kp HOME	&kp PG_UP
+				&kp DEL		&kp END		&kp PG_DN	&studio_unlock
+				&none		&kp UP		&none
+				&kp LEFT	&kp DOWN	&kp RIGHT	&mo 2
+				>;
+		};
+		btlayer {
+			bindings = <
+				&none			&none			&none			&bt BT_CLR
+				&none			&none			&none
+				&none			&none			&none 			&none
+				&bt BT_SEL 0	&bt BT_SEL 1	&bT BT_SEL 2
+				&none			&none			&none			&none
 	};
-    };
  };
