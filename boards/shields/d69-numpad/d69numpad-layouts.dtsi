@@ -1,13 +1,4 @@
 #include <physical_layouts.dtsi>
-/ {
-    chosen {
-      zmk,battery = &vbatt;
-    };
-
-    vbatt: vbatt {
-        compatible = "zmk,battery-nrf-vddh";
-    };
-};
 
 / {
     d69numpad_physical_layout: d69numpad_physical_layout {
